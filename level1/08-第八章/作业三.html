@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+	<style>
+		*{margin: 0; padding: 0; }
+		body{font: 12px "微软雅黑";}
+		a{text-decoration: none; color: #000;}
+		.clearfix:after{content: '';display: block; clear: both;}
+		ul{list-style: none;}
+		.box{
+			width: 1200px;
+			border: 1px solid #666;
+			margin: 50px auto;
+		}
+		.nav{
+			width: 883px;
+			margin: 40px auto;
+		}
+		.nav a{
+			color: #353535;
+			border-right: 1px solid #ccc;
+			padding: 0px 30px;
+		}
+		.box .nav .item{
+			border-right: none;
+		}
+		a:hover{
+			color: orange;
+		}
+		.box ul li{
+			float: left;
+			border-right: 1px solid #ccc;
+		}
+		.box ul .list_1+list_2{
+			border-left: 1px solid #ccc;
+		}
+		.box ul .list_2{
+			width: 230px;
+		}
+		.box ul .list_2 img{
+			border-bottom: 1px solid #ccc;
+		}
+		.box ul .list_3{
+			width: 210px;
+		}
+		.box ul .list_3 img{
+			border-bottom: 1px solid #ccc;
+		}
+		.box ul .list_4{
+			width: 426px;
+		}
+	/* 	.box ul .list_4 img{
+			border-right: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+		} */
+		.nav ul li .item_1{
+			border-bottom:none;	
+		}
+	</style>
+	
+ </head>
+ <body>
+		<div class="box">
+			<div class="nav">
+				<a href="#">护肤</a>
+				<a href="#">彩妆</a>
+				<a href="#">护肤</a>
+				<a href="#">彩妆</a>
+				<a href="#">护肤</a>
+				<a href="#">彩妆</a>
+				<a href="#">护肤</a>
+				<a href="#">彩妆</a>
+				<a href="#">护肤</a>
+				<a href="#" class="item">彩妆</a>
+			</div>
+			<ul class="clearfix">
+				<li class="list_1">
+					<img src="images/demo3/1.jpg" width="320" height="500" alt="#"/>
+				</li>
+				<li class="list_2">
+					<img src="images/demo3/2.jpg" width="" height="" alt="#" />
+					<img src="images/demo3/3.jpg" width="" height="" alt="#" />
+				</li>
+				<li class="list_3">
+					<img src="images/demo3/4.jpg" width="" height="" alt="#"  class="item_1"/>
+					<img src="images/demo3/5.jpg" width="" height="" alt="#" />
+					<img src="images/demo3/6.jpg" width="" height="" alt="#" />
+				</li>
+				<li class="list_4">
+					<img src="images/demo3/7.jpg" width="" height="" alt="#" />
+					<img src="images/demo3/8.jpg" width="" height="" alt="#" />
+					<img src="images/demo3/9.jpg" width="" height="" alt="#" />
+				</li>
+			</ul>
+		</div>
+ </body>
+</html>

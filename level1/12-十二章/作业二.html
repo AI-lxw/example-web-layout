@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+ <head>
+			<meta charset="UTF-8">
+			<meta name="Generator" content="EditPlus®">
+			<meta name="Author" content="">
+			<meta name="Keywords" content="">
+			<meta name="Description" content="">
+<title>作业二</title>
+			<style>
+				*{margin: 0; padding: 0; }
+				body{font: 16px "微软雅黑"; color: #fff;}
+				a{text-decoration: none; color: #000;}
+				.clearfix:after{content: '';display: block; clear: both;}
+				ul{list-style: none;}
+				table{border-collapse: collapse;}table tr,table td{padding: 0;}
+				/*star wrap*/
+				.wrap{
+					width: 602px;
+					margin: 100px auto;
+					background-color: #515151;
+					padding: 20px;
+				}
+				.wrap h2{
+					text-align: center;
+					height: 55px;
+					line-height: 55px;
+					font-size: 24px;
+				}
+				.wrap fieldset{
+					padding: 20px;
+					border: 2px solid #fff;
+				}
+				form table tr td{
+					padding: 10px;
+				}
+				form table tr td input{
+					height: 25px;
+					vertical-align: middle;
+				}
+				form table tr td select{
+					width: 100%;
+				}
+				form table tr .box{
+					width: 435px;
+				}
+				form table tr .box_1{
+					width: 70px;
+				}
+				.wrap .sub{
+					margin: 20px auto;
+					text-align: center;
+				}
+				/*end wrap*/
+			</style>
+</head>
+<body>
+	<!--star wrap-->
+	<div class="wrap">
+		<h2>增加快递信息</h2>
+		<form>
+			<fieldset>
+				<legend>发货单</legend>
+					<table>
+						<tr>
+							<td>发货人：</td>
+							<td><input type="text" name=""></td>
+							<td>地址：</td>
+							<td><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td>电话：</td>
+							<td><input type="text" name=""></td>
+							<td>邮编：</td>
+							<td><input type="text" name=""></td>
+						</tr>
+					</table>
+			</fieldset>
+			<fieldset>
+				<legend>收货单</legend>
+					<table>
+						<tr>
+							<td>收货人：</td>
+							<td><input type="text" name=""></td>
+							<td>地址：</td>
+							<td><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td>电话：</td>
+							<td><input type="text" name=""></td>
+							<td>邮编：</td>
+							<td><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td>地区：</td>
+							<td>
+								<select name="" id="">
+									<option value="">长沙市岳麓区</option>
+									<option value="">长沙市芙蓉区</option>
+									<option value="">长沙市开福区</option>
+									<option value="">长沙市天心区</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>包装</td>
+							<td colspan="3">
+								<input type="checkbox">纸箱
+								<input type="checkbox">木箱
+								<input type="checkbox">快递袋
+								<input type="checkbox">其他
+							</td>
+							
+
+						</tr>
+						<tr>
+							<td>付款方式：</td>
+							<td colspan="3">
+								<input type="radio">现金
+								<input type="radio">支付宝
+								<input type="radio">网银
+								<input type="radio">ATM
+							</td>
+						</tr>
+					</table>
+			</fieldset>
+			<fieldset>
+				<legend>货物信息</legend>
+				<table>
+					<tr>
+						<td>货物名称：</td>
+						<td colspan="5"><input type="text" class="box"></td>
+					</tr>
+					<tr>
+						<td>数量：</td>
+						<td><input type="text"  class="box_1"></td>
+						<td>重量：</td>
+						<td><input type="text"  class="box_1"></td>
+						<td>发货时间：</td>
+						<td><input type="text"  class="box_1 time"></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+		<!--star sub-->
+		<div class="sub">		
+			<input type="submit" value="确定">
+			<input type="submit" value="取消">
+		</div>
+		<!--end sub-->
+	</div>
+	<!--end wrap-->
+</body>
+</html>

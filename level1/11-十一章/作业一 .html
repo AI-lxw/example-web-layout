@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+ <head>
+			<meta charset="UTF-8">
+			<meta name="Generator" content="EditPlus®">
+			<meta name="Author" content="">
+			<meta name="Keywords" content="">
+			<meta name="Description" content="">
+<title>Document</title>
+			<style>
+				*{margin: 0; padding: 0; }
+				body{font: 14px "微软雅黑";}
+				a{text-decoration: none; color: #000;}
+				.clearfix:after{content: '';display: block; clear: both;}
+				ul{list-style: none;}
+				/*star wrap*/
+				.wrap{
+					width: 430px;
+					border: 1px solid #ccc;
+					border-radius: 5px;
+					margin: 100px auto;
+				}
+				.wrap form{
+					width: 370px;
+					margin: 20px auto;
+					text-align: right;
+				}
+				.wrap form p:focus{
+					
+				}
+				.wrap form input{
+					width: 290px;
+					height: 40px;
+					border-radius: 5px;
+					outline: none;
+					border: 1px solid #ccc;
+					margin-bottom: 20px;
+				}
+				.wrap form .button .sub{
+					height: 30px;
+					background-color: #3C6CB1;
+					color: #fff;
+					cursor: pointer;
+				}
+				.wrap form .button .sub-l{
+					width: 80px;
+				}
+				.wrap form .button .sub-r{
+					width: 140px;
+				}
+				.wrap form p {
+					position: relative;
+					color: #000;
+				}
+				/*star span*/
+				.wrap form p span{
+					display: none;
+					position:absolute;
+					top: -10px;
+					left: 380px;
+					width: 250px;
+					height: 40px;
+					padding: 10px;
+					background:#56A9D3;
+					text-align: left;
+					font-size: 16px;
+					color: #fff;
+				}
+				.wrap form p span:before{
+					content:'';
+					position:absolute;
+					left: -10px;
+					top: 50%;
+					margin-top:-10px;
+					width: 0;
+					height: 0;
+					border:10px solid #fff;
+					border-right-color:#56A9D3;
+					border-left:none;
+				}
+				.wrap form input:focus + span{
+					display: block;
+				}
+				/*end span*/
+				/*end wrap*/
+			</style>
+</head>
+<body>
+	<!--star wrap-->
+	<div class="wrap">
+		<form action="#" name="" method="post" target="">
+			<p>用户名：
+				<input type="text" name="" value="" placeholder="输入英文字母或数字"/>
+				<span>用户名必须为4--16位数字或者英文字母</span>
+			</p>
+			<p>密码：
+				<input type="password" name="" value="" placeholder=""/>
+				<span>请输入6-14位密码，包括特殊字符</span>
+			</p>
+			<p>确认密码：
+				<input type="password" name="" value="" placeholder=""/>
+				<span>请再次输入6-14位密码</span>
+			</p>
+			<p>email：
+				<input type="text" name="" value="" placeholder="123456789@qq.com"/>
+				<span>请输入正确的email格式</span>
+			</p>
+			<p>昵称：
+				<input type="text" name="" value="" placeholder="输入英文字母或数字"/>
+				<span>请再次输入6-14位密码</span>
+			</p>
+			<div class="button">
+				<input type="submit"  value="注册" class="sub sub-l"/>
+				<input type="submit"  value="我有账号，我要登录" class="sub sub-r"/>
+			</div>
+		</form>
+	</div>
+	<!--end wrap-->
+</body>
+</html>

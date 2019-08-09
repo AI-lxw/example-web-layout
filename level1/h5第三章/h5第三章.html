@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+ <head>
+			<meta charset="UTF-8">
+			<meta name="Generator" content="EditPlus®">
+			<meta name="Author" content="">
+			<meta name="Keywords" content="">
+			<meta name="Description" content="">
+			<title>作业</title>
+			<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+
+			<style>
+				*{margin: 0; padding: 0; }
+				body{font: 14px "微软雅黑";}
+				a{text-decoration: none; color: #000;}
+				.clearfix:after{content: '';display: block; clear: both;}
+				ul{list-style: none;}
+				table{border-collapse: collapse;}table tr,table td{padding: 0;}
+				ul{
+					width: 100px;
+					margin: 100px;
+				}
+				li{
+					position: relative;
+					overflow: hidden;
+					width: 50px;
+					height: 50px;
+					line-height: 50px;
+					background-color: #eee;
+					margin-bottom: 5px;
+					border-radius: 50%;
+					text-align: center;
+
+				}
+				
+				li a:after{
+					content: '';
+					opacity: 0;					
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;	
+					bottom: 0;
+					margin: auto;
+					width: 35px;
+					height: 35px;
+					line-height: 40px;
+					border-radius: 50%;
+					background-color: #3dbe5b;
+					text-align: center;
+					transition: 0.3s;
+				}
+				li:nth-child(2) a:after{
+					background-color: #21b3f6;
+				}
+				li:nth-child(3) a:after{
+					background-color: #f7c514;
+				}
+				li:nth-child(4) a:after{
+					background-color: #fe5757;
+				}
+				li a:hover:after{
+					opacity: 1;
+					transform:scale(2);
+				}
+				li a i.iconfont{
+					position: relative;
+					display: block;
+					z-index: 1;
+					font-size: 30px;
+					color: #fff;
+				}
+				li:hover i.iconfont{
+					animation: swing 0.3s;
+				}
+				@keyframes swing{
+					0%{transform: rotate(0deg);}
+					25%{transform: rotate(5deg);}
+					50%{transform: rotate(0deg);}
+					75%{transform: rotate(-5deg);}
+					100%{transform: rotate(0deg);}
+				}
+			</style>
+</head>
+<body>
+	<ul>
+		<li><a href=""><i class="iconfont icon-weixin"></i></a></li>
+		<li><a href=""><i class="iconfont icon-qq"></i></a></li>
+		<li><a href=""><i class="iconfont icon-weibo"></i></a></li>
+		<li><a href=""><i class="iconfont icon-qqkongjian"></i></a></li>
+	</ul>
+</body>
+</html>

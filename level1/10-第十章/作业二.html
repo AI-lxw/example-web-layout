@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+ <head>
+			<meta charset="UTF-8">
+			<meta name="Generator" content="EditPlus®">
+			<meta name="Author" content="">
+			<meta name="Keywords" content="">
+			<meta name="Description" content="">
+<title>作业二</title>
+			<style>
+				*{margin: 0; padding: 0; }
+				body{font: 12px "微软雅黑"; color: #000;}
+				a{text-decoration: none; color: #000;}
+				.clearfix:after{content: '';display: block; clear: both;}
+				ul{list-style: none;}
+				/*star wrap*/
+				.wrap{
+				width: 1000px;
+				height: 34px;
+				border: 1px solid #ccc;
+				margin: 100px auto;
+				
+				}
+				.header{
+					height: 36px;
+					background: #eee;
+				}
+				.header > li{
+					position: relative;
+					float: left;
+					padding: 0 10px;
+				
+				}
+				.header .title_l{
+					border-top: 4px solid #ff9900;
+					border-right: 1px solid #ccc;
+					background: #fff;
+					height: 32px;
+					line-height: 30px;
+				}
+				.header .title_r{
+					height: 34px;
+					line-height: 34px;
+				}
+				.header > li .banner{
+					position: absolute;
+					top: 56px;
+					left: 0;
+					overflow: hidden;
+					width: 1000px;
+				}
+			
+				.header > li .banner .pic li{
+					position: relative;
+					float:left;
+					width: 198px;
+					height: 132px;
+				}
+				.header > li .banner .pic li:hover{
+					border: 1px solid orange;
+					cursor: pointer;
+				}
+				.header > li .banner .pic li img{
+					width: 100%;
+					height: 100%;
+				}
+				.header > li .banner .pic li p{
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					background: rgba(0,0,0,.6);
+					color: #fff;
+				}
+				/* star button*/
+				.wrap > a{
+					position: absolute;
+					width: 29px;
+					height: 43px;
+					background: url("images/demo2/6.png") no-repeat;
+				}
+				.wrap > a.prev{
+					top: 200px;
+					left:268px; 
+					background-position: 0px -1px;
+				}
+				.wrap > a.next{
+					top: 200px;
+					right:277px; 
+					background-position: -28px -1px;
+				}
+				.wrap > a.prev:hover{
+					background-position: 0px -44px;
+				}
+				.wrap > a.next:hover{
+					background-position: -28px -44px;
+				}
+				/* end button*/
+				/*end wrap*/
+			</style>
+</head>
+<body>
+</body>
+	<!--star wrap-->
+	<div class="wrap">
+		<ul class="header .clearfix">
+				<li class="title_l">
+					<a href="#">我喜欢看图</a>
+					<div class="banner">
+						<ul class="pic">
+							<li>
+								<img src="images/demo2/1.jpg" alt="">
+								<p>美女洗车 但是车好像不对劲</p>
+							</li>
+							<li>
+								<img src="images/demo2/2.jpg" alt="">
+								<p>美女洗车 但是车好像不对劲</p>
+							</li>
+							<li>
+								<img src="images/demo2/3.jpg" alt="">
+								<p>美女洗车 但是车好像不对劲</p>
+							</li>
+							<li>
+								<img src="images/demo2/4.jpg" alt="">
+								<p>美女洗车 但是车好像不对劲</p>
+							</li>
+							<li>
+								<img src="images/demo2/5.gif" alt="">
+								<p>美女洗车 但是车好像不对劲</p>
+							</li>
+
+						</ul>
+					</div>
+				</li>
+				<li class="title_r">
+					<a href="#">猜你喜欢</a>
+				</li>
+			</ul>
+			<!--button-->
+			<a href="" class="prev"></a>
+			<a href="" class="next"></a>
+			<!--button-->
+	</div>
+	<!--end wrap-->
+</html>
